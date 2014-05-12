@@ -1,0 +1,76 @@
+html,
+body,
+.fx,
+.fx_left,
+.fx_center,
+.fx_right,
+.menu,
+.aside
+{
+    height: 100%;
+}
+
+.fx {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    position:absolute;
+}
+
+.fx_left {
+    flex: 1;
+    max-width: 200px;
+    min-width: 150px;
+    background-color: #F3F3F3;
+}
+
+.fx_center {
+    flex: 3;
+    min-width: 200px;
+}
+
+.fx_right {
+    flex: 2;
+}
+
+.grey_bg {
+    background-color: #F3F3F3;
+}
+
+.aside{
+    background-color: #F9F9F9;
+    border-right:1px #E7E7E7 solid;
+}
+
+.blue_bg {
+    background: #0072C6;
+}
+
+.grey_border {
+    border-left:1px #F3F3F3 solid;
+}
+
+.no_border {
+    height: 43px;
+}
+
+.super_input{
+    width: 95%;
+    height: 35px;
+    margin: 10px;
+}
+
+.menu_item{
+    width: 100%;
+}
+.menu_item a:link{
+    width: 100%;
+    height: 30px;
+}
+
+.mini_logo{
+    background-image: url("col_logo.png") ;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
