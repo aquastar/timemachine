@@ -33,6 +33,11 @@ body,
     flex: 2;
 }
 
+.fx_col{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
 .grey_bg {
     background-color: #F3F3F3;
 }
@@ -60,17 +65,27 @@ body,
     margin: 10px;
 }
 
-.menu_item{
+.menu li{
     width: 100%;
 }
-.menu_item a:link{
+.menu_item, .menu_item:link{
     width: 100%;
     height: 30px;
+}
+.menu_item:hover{
+    background-color: #CCC;
+}
+
+.menu_item span{
+    text-decoration: none;
 }
 
 .mini_logo{
     background-image: url("col_logo.png") ;
     background-repeat: no-repeat;
     background-color: transparent;
-
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
 }
