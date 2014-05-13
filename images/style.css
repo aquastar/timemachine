@@ -67,23 +67,40 @@ body,
 
 .menu_item{
     width: 100%;
-    height: 30px;
+    height: 36px;
     position: relative;
     display: list-item;
 }
-.menu_item a{
+.menu_item a:link{
     position: absolute;
     width: 100%;
+    height: 100%;
+    text-decoration: none;
+
 }
 .menu_item a:hover{
     background-color: #CCC;
+}
+
+.menu_item a i{
+    margin: 8px;
+}
+
+.menu_item a:link span{
+    margin: 10px;
+    color: #333;
+    font-family: '微软雅黑';
+}
+
+.menu_item a:hover span{
+    color: #fff;
 }
 
 .collection_logo{
     background-image: url("col_logo.png") ;
     background-repeat: no-repeat;
     background-color: transparent;
-    opacity: 0.6;
+    opacity: 0.5;
 
 }
 
