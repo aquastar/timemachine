@@ -65,25 +65,29 @@ body,
     margin: 10px;
 }
 
-.menu li{
-    width: 100%;
-}
-.menu_item, .menu_item:link{
+.menu_item{
     width: 100%;
     height: 30px;
+    position: relative;
+    display: list-item;
 }
-.menu_item:hover{
+.menu_item a{
+    position: absolute;
+    width: 100%;
+}
+.menu_item a:hover{
     background-color: #CCC;
 }
 
-.menu_item span{
-    text-decoration: none;
-}
-
-.mini_logo{
+.collection_logo{
     background-image: url("col_logo.png") ;
     background-repeat: no-repeat;
     background-color: transparent;
+    opacity: 0.6;
+
+}
+
+.mini_logo{
     width: 18px;
     height: 18px;
     display: inline-block;
