@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="images/reset.css"/>
     <link type="text/css" rel="stylesheet" href="images/style.css"/>
+    <script type="text/javascript" src="images/tm.js"></script>
+
 </head>
 <body>
 <div class="fx">
     <div class="fx_left grey_bg">
-        <div class="blue_bg no_border"><img src="images/logo.jpg" alt="come on, be the best of yourself" /></div>
+        <div class="blue_bg no_border">
+            <img id="logo" src="images/logo.png" alt="come on, be the best of yourself"/>
+        </div>
         <div class="menu">
             <ul class="fx_col">
                 <li class="menu_item">
@@ -17,15 +21,15 @@
                         <i class="mini_logo" id="collection_logo"></i><span>收集箱</span><span>8</span>
                     </a>
                 </li>
-                <li class="menu_item" >
-                    <a href="#"   id="current_menu">
+                <li class="menu_item">
+                    <a href="#" id="current_menu">
                         <i id="calendar_logo">21</i><span>日程表</span><span>8</span>
                     </a>
                 </li>
 
                 <li class="" id="project_pool">
                     <span>[ - 项目池 - ]</span>
-                    <a href="#"  id="current_menu">
+                    <a href="#" id="current_menu">
                         <i class="blood_logo">86</i><span>项目池</span><span>8</span>
                     </a>
                     <a href="#">
@@ -51,41 +55,100 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </div>
     <div class="fx_center">
         <div class="blue_bg no_border"></div>
         <div class="main_list">
             <div>
-                <input class="super_input" placeholder="添加任务" type="text" />
+                <input class="super_input" placeholder="添加任务" type="text"/>
             </div>
             <div class="task_list">
                 <ul>
                     <li>
                         <div>
-                            <span></span>
-                            <div></div>
-                            <a href="#">
-                                <div>这是任务一这是任务一这是任务一这是任务一这是任务一1</div>
-                                <div></div>
+                            <a href="#" class="task_cont pa">
+                                <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                                <input type="date" value="1996-12-19" class="task_time"/>
+                                <span class="task_project">项目一</span>
                             </a>
-                            <span></span>
                         </div>
                     </li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一2</li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一3</li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一4</li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一5</li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一6</li>
-                    <li>这是任务一这是任务一这是任务一这是任务一这是任务一7</li>
+                    <li>
+                        <div>
+                            <a href="#" class="task_cont pb">
+                                <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                                <input type="date" value="1996-12-19" class="task_time"/>
+                                <span class="task_project">项目一</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#" class="task_cont pc">
+                                <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                                <input type="date" value="1996-12-19" class="task_time"/>
+                                <span class="task_project">项目一</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#" class="task_cont pn">
+                                <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                                <input type="date" value="1996-12-19" class="task_time"/>
+                                <span class="task_project">项目一</span>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="fx_right">
         <div class="blue_bg no_border"></div>
-        <div class="aside grey_border">comment</div>
+        <div class="aside grey_border">
+            <div class="task_list">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#" class="task_cont pa">
+                            <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                            <input type="date" value="1996-12-19" class="task_time"/>
+                            <span class="task_project">项目一</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="task_cont pb">
+                            <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                            <input type="date" value="1996-12-19" class="task_time"/>
+                            <span class="task_project">项目一</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="task_cont pc">
+                            <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                            <input type="date" value="1996-12-19" class="task_time"/>
+                            <span class="task_project">项目一</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="task_cont">
+                            <div class="task_label">这是任务一这是任务一这是任是任务一2</div>
+                            <input type="date" value="1996-12-19" class="task_time"/>
+                            <span class="task_project">项目一</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
     </div>
 </div>
 </body>

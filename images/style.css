@@ -58,9 +58,11 @@ body,
 }
 
 .no_border {
-    height: 43px;
+    height: 50px;
 }
-
+#logo{
+    padding: 3px;
+}
 /*menu style*/
 
 .menu_item{
@@ -85,7 +87,7 @@ body,
     width: 100%;
     height: 100%;
     text-decoration: none;
-    transition: all 0.3s ease-out;
+    /*transition: all 0.3s ease-out;*/
 }
 
 .menu_item a:hover{
@@ -180,7 +182,6 @@ body,
 #project_pool a{
     text-decoration: none;
     color: #333;
-    transition: all 0.3s ease-out;
 }
 #project_pool a:active{
     color: #999;
@@ -207,7 +208,7 @@ body,
 #current_menu:link{
     background-color: #ccc;
     box-shadow:2px 2px 3px #aaa inset;
-    text-shadow: 0px -1px 0px #ddd, 0px 1px 1px #666;
+    text-shadow: 0 -1px 0px #ddd, 0 1px 1px rgb(102, 102, 102);
 }
 
 
@@ -227,6 +228,70 @@ body,
     color: #ccc;
 }
 
+.task_list{
+    font-size: 12px;
+}
+
 .task_list ul{
     list-style: none;
+}
+
+.task_list li{
+    margin: 3px;
+}
+
+.task_cont{
+    display: flex;
+    flex-flow: row;
+    text-decoration: none;
+}
+.task_cont:link{}
+.task_cont:hover{}
+.task_cont:after{}
+
+.task_cont div, .task_cont span{
+    line-height: 240%;
+    padding-left: 10px;
+}
+
+/*priority color schema*/
+.pa, .pb, .pc {
+    color: #ffffff;
+    box-shadow: 1px 1px 2px #666 inset;
+    text-shadow: 1px -1px 1px #666, 1px 1px 1px #666;
+}
+.pa{
+    background-color: #FF738E;
+}
+.pa:hover{
+    background-color: #CA0028;
+}
+
+.pb{
+    background-color: #38D6D6;
+}
+.pb:hover{
+    background-color: #1F9696;
+}
+
+.pc{
+    background-color: #31ACFF;
+}
+.pc:hover{
+    background-color: #006BB3;
+}
+
+.pn{
+    background-color: #F9F9F9;
+}
+.pn:hover{
+    background-color: #ddd;
+}
+
+.test{
+    font-family: '微软雅黑';
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px -1px 2px #666, 2px 1px 2px #666;
+
 }
